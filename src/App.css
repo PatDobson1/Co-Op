@@ -1,0 +1,121 @@
+.currency-convertor {
+    font-family: sans-serif;
+    font-size: 16px;
+    border: 1px solid #818181;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 20px;
+    padding: 20px;
+
+    @media (min-width: 840px) {
+        margin: 20px auto;
+    }
+}
+
+.currency-convertor__amount-label {
+    display: block;
+    color: #818181;
+}
+
+.currency-convertor__amount {
+    position: relative;
+}
+
+.currency-convertor__amount--switch {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: none;
+    border: none;
+}
+
+.currency-convertor__amount--switch img{
+    width: 20px;
+    height: 20px;
+}
+
+.currency-convertor__amount-input {
+    width: 100%;
+    border-color: #3b3b9b;
+    border-width: 0 0 2px 0;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #3b3b9b;
+}
+
+.currency-convertor__input--error {
+    font-weight: 700;
+    color: #ff0000;
+    margin: 0 0 10px 0;
+}
+
+ .currency-convertor__country {
+     width: calc(100% - 60px);
+     padding: 10px 0;
+     margin-bottom: 20px;
+     border: none;
+     color: #3b3b9b;
+     font-size: 1.1em;
+ }
+
+.currency-convertor__country-image {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 3px;
+    border: 1px solid #a3a3a3;
+    background-color: #e9e9e9;
+}
+ .currency-convertor__output {
+     font-size: 1.1em;
+     color: #3b3b9b;
+ }
+
+ .currency-convertor__output-conversion {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ .currency-convertor__output-counter {
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 20px;
+     background-color: #3b3b9b;
+     border: 2px solid #9090ad;
+     color: #ffffff;
+     padding: 10px;
+     width: 250px;
+     margin: 0 auto 20px auto;
+ }
+
+ .currency-convertor__output-counter--title {
+     flex-basis: 50%;
+ }
+
+ .currency-convertor__output-counter--minutes {
+     flex-basis: 25%;
+ }
+
+ .currency-convertor__output-counter--seconds {
+     flex-basis: 25%;
+ }
+
+ .currency-convertor--error {
+     text-align: center;
+     font-size: 1.1em;
+     font-weight: 700;
+     color: #ff0000;
+ }
+
+.currency-convertor__button {
+    width: 100%;
+    background-color: #3b3b9b;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
