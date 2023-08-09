@@ -124,13 +124,15 @@ function App() {
                         className="currency-convertor__amount-input"
                         onChange={handleAmountChange}
                         defaultValue="100" />
-                <button className="currency-convertor__amount--switch" onClick={switchHandler}><img src={SwitchLogo} /></button>
+                <button className="currency-convertor__amount--switch" onClick={switchHandler} aria-label="Switch currencies">
+                    <img src={SwitchLogo} aria-hidden="true" />
+                </button>
                 {amountError.status &&
                     <p className="currency-convertor__input--error">{amount} {amountError.errorMessage}</p>
                 }
             </div>
-            <CountryDropdown changeHandler={handleOriginChange} initial="GBP" id="origin" image={origin} />
-            <CountryDropdown changeHandler={handleTargetChange} initial="EUR" id="target" image={target} />
+            <CountryDropdown changeHandler={handleOriginChange} initial="GBP" id="origin" image={origin} name="Convert from" />
+            <CountryDropdown changeHandler={handleTargetChange} initial="EUR" id="target" image={target} name="Convert to" />
             {showConversion && !conversionError &&
                 <div className="currency-convertor__output">
                     <div className="currency-convertor__output-conversion">{amount} {origin} is equivalent to {targetAmount} {target}</div>

@@ -31,7 +31,8 @@ const CountryDropdown = (props) => {
             <select className="currency-convertor__country"
                     id={props.id}
                     onChange={props.changeHandler}
-                    defaultValue={"GBP"}>
+                    defaultValue={"GBP"}
+                    aria-label={props.name}>
                 {countryList}
             </select>
         </>
