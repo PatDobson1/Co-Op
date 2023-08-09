@@ -13,7 +13,7 @@ To compile the technical test:
   - Hooks used - useState, useEffect
   - CSS - all CSS written as basic CSS, generally I would use SCSS (All CSS in 'App.css')
   - Unit testing - I am relatively new to unit testing (especially in React) so, for times sake, I didn't attempt to write unit tests.
-  - Bonus (compromise) - For times sake, I didn't create a custom drop-down (as I would need to do add images by the names), instead, to use the image CDN, I placed the country images outside the drop-down
+  - Bonus (compromise) - For times sake, I didn't create a custom drop-down (as I would need to do to add images by the names), instead, to use the image CDN, I placed the country images outside the drop-down
   - Error handling - I have handled the following errors:
     - Non-numeric input (I used a 'text' input element to enable this, generally I'd use a 'number' element and therefore have built in validation)
     - Input less than 0
